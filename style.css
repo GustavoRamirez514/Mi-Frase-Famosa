@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+
+}
+.recuadro {
+    border: 0.1rem solid black;
+    border-radius: 3rem;
+    text-align: center;
+}
+#descripcion {
+    width: 600px;
+    height: 650px;
+    display: flex;
+    margin: 10% auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    font-size: 1.8rem;
+    color: black;
+    padding-top: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+#titulo {
+    width: 200px;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    top: -30px;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#descripcion img {
+    width: 100%;
+    padding-top: 3rem;
+}
+
+
+/* 
+-Siempre iniciamos un css de la siguiente manera para que todo se resetee y nosotros demos los valores
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+-Se usa rem como unidad de medida ya que es responsive y se usa asi
+html{
+font-size:6.25%;
+}
+Lo cual haría que 1 rem fuera igual a un pixel
+entonces para tener 16 px solo basta poner:
+p {
+font-size:16 rem;
+}
+
+- Displays
+ *Displays: block los organizar horizontalmente, 
+ *el display: inline los organiza verticalmente pero no se le puede agregar paddings y margins
+  arriba o abajo pero si a los lados,
+ *el display inline-block permite juntar lo mejor de los dos display anteriores.
+ *el display: flex permite que el contenido del padre sea flexible. esto se logra usando otro componente llamado 
+ *flex que tiene varias propiedares como direccion para acomodor los elementos segun necesitemos(como acomodarlos 
+verticalmente o horizontalmente.
+*justify-content que tiene varias propiedades que nos permite alinear el contenido de forma horizontal
+(como generar espacios entre componentes horizontales)
+ * align.item sirve es similar a justify-content pero de forma vertical
+
+ -Las variables se usan asi y funciona para cualquier valor
+ :root {
+    --primary-color: black
+ }
+ y para usarlas se llaman asi: color: var(--primary-color)
+
+ - Un viewpoint nos sirve para generar diferente codigo para cada tipo de tamaño de pantalla, lo que permite
+ generar un diseño responsive, basicamente es separar estilos y es recomendable usarlo en diferentes archivos.
+el codigo seria: 
+@media (min-width 600xp){
+ si la pantalla es mayor a 600xp se ejecutara todo esto.
+}
+la forma de llamarlo en html seria: <link rel="" href="" media="screen and(min-with: 600xp)" 
+
+-picture en html nos permite generar un diseño responsive en imagenes ya que picture sirve para agrupar imagenes
+,entonces le estamos diciendo al navegador que nos cargue diferentes imagenes teniendo en cuenta el tamaño de las pantallas,
+el codigo seria asi: 
+<picture>
+    <source media="(min-width: 1000px)" srcset="./images/large.jpg" />
+    <source media="(min-width: 800px)" srcset="./images/medium.jpg" />
+    <img src="./images/small.jpg" alt="image" />
+</picture>
+-Grid: genera una cuadrícula que nos ayuda a dividir las cajas que son etiquetas contenedoras.
+Flex: nos ayuda a posicionar el contenido de las etiquetas contenedoras.
+*/
